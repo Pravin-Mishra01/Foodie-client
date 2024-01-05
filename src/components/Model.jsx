@@ -34,7 +34,7 @@ const Model = () => {
           email: data.email,
         };
         axios
-          .post("http://localhost:8080/users", userInfor)
+          .post("https://shopplusplus-server.onrender.com/users", userInfor)
           .then((response) => {
             // console.log(response);
             alert("Signin successful!");
@@ -60,7 +60,7 @@ const Model = () => {
           email: result?.user?.email,
         };
         axios
-          .post("http://localhost:8080/users", userInfor)
+          .post("https://shopplusplus-server.onrender.com/users", userInfor)
           .then((response) => {
             // console.log(response);
             alert("Signin successful!");

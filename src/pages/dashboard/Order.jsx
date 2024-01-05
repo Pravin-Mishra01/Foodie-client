@@ -12,7 +12,7 @@ const Order = () => {
     queryKey: ["orders", user?.email],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:8080/payments?email=${user?.email}`,
+        `https://shopplusplus-server.onrender.com/payments?email=${user?.email}`,
         {
           headers: {
             authorization: `Bearer ${token}`,

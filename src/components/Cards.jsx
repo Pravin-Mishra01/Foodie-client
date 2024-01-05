@@ -36,7 +36,7 @@ const Cards = ({ item }) => {
       };
 
       axios
-        .post("http://localhost:8080/carts", cartItem)
+        .post("https://shopplusplus-server.onrender.com/carts", cartItem)
         .then((response) => {
           //  console.log(response);
           if (response) {

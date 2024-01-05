@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 
 const axiosPublic = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: "https://shopplusplus-server.onrender.com",
 });
 
 const useAxiosPublic = () => {
