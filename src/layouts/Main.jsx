@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import "../App.css";
 import Footer from "../components/Footer";
 import { AuthContext } from "../contexts/AuthProvider";
