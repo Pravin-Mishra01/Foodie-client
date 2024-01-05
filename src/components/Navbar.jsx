@@ -33,14 +33,19 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a href="/" className="text-blue">
+        <a href="/" className="text-green">
           Home
         </a>
       </li>
       <li tabIndex={0}>
-        <summary>
-          <a href="/menu">Menu</a>
-        </summary>
+        <details>
+          <summary>Menu</summary>
+          <ul className="p-2">
+            <li>
+              <a href="/menu">All</a>
+            </li>
+          </ul>
+        </details>
       </li>
       <li tabIndex={0}>
         <details>
@@ -51,6 +56,9 @@ const Navbar = () => {
             </li>
           </ul>
         </details>
+      </li>
+      <li>
+        <a>Offers</a>
       </li>
     </>
   );
